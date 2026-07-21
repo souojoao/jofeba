@@ -1,2 +1,179 @@
-# jofeba
-This page is intended for publishing school-related information.
+
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<title>Missão Secreta</title>
+
+<style>
+
+body{
+    margin:0;
+    font-family:Georgia, serif;
+    background:#1e1b18;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+#pergaminho{
+    width:750px;
+    max-width:90%;
+    background:#f3e3b2;
+    padding:40px;
+    border:12px solid #7a4b18;
+    border-radius:12px;
+    box-shadow:0px 0px 40px black;
+    text-align:center;
+}
+
+h1{
+    color:#6b1f1f;
+    font-size:48px;
+    margin-bottom:10px;
+}
+
+h2{
+    color:#4a2d16;
+}
+
+input{
+    font-size:24px;
+    text-align:center;
+    padding:10px;
+    width:180px;
+    border-radius:8px;
+    border:2px solid #6b1f1f;
+}
+
+button{
+
+    margin-top:20px;
+    font-size:22px;
+    padding:12px 30px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    background:#6b1f1f;
+    color:white;
+
+}
+
+button:hover{
+    background:#8a2b2b;
+}
+
+#resultado{
+    display:none;
+    margin-top:30px;
+}
+
+.mapa{
+
+    border:5px solid #6b1f1f;
+    margin-top:20px;
+    width:100%;
+    border-radius:10px;
+
+}
+
+.erro{
+    color:red;
+    font-weight:bold;
+    margin-top:20px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div id="pergaminho">
+
+<h1>🔑 Missão Secreta</h1>
+
+<h2>Introduz o Código para desbloquear a primeira pista.</h2>
+
+<input id="codigo" type="password" placeholder="Código">
+
+<br>
+
+<button onclick="verificar()">Desbloquear</button>
+
+<p id="erro" class="erro"></p>
+
+<div id="resultado">
+
+<h2>🎉 Parabéns!</h2>
+
+<h3>Concluíste a primeira missão.</h3>
+
+<p>
+No dia <strong>22 de julho</strong><br>
+às <strong>16h45</strong><br><br>
+
+Dirige-te ao ponto de encontro:
+</p>
+
+<h2>📍R. Cel. Pereira Pascoal 23A 2410-453 Leiria<br>
+Guimarota</h2>
+
+<h2>📍R. Cel. Pereira Pascoal 23A<br>
+2410-453 Leiria</h2>
+
+<a href="https://maps.app.goo.gl/21BqhSGcvybXyAqQ6"
+   target="_blank">
+
+<button style="
+margin-top:20px;
+padding:15px 30px;
+font-size:22px;
+background:#8b1e1e;
+color:white;
+border:none;
+border-radius:10px;
+cursor:pointer;
+">
+
+🗺️ Abrir localização no Google Maps
+
+</button>
+
+</a>
+<p style="font-size:22px">
+
+🗝️ No local “IMT – Parque de Estacionamento” receberás uma mensagem por e-mail com o destino do jantar.
+
+</p>
+
+</div>
+
+</div>
+
+<script>
+
+function verificar(){
+
+let codigo=document.getElementById("codigo").value;
+
+if(codigo=="2410"){
+
+document.getElementById("resultado").style.display="block";
+document.getElementById("erro").innerHTML="";
+
+}else{
+
+document.getElementById("erro").innerHTML="Código incorreto.";
+
+}
+
+}
+
+</script>
+
+</body>
+
+</html>
+
