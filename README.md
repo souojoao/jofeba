@@ -120,28 +120,11 @@ Dirige-te ao ponto de encontro:
 <h2>📍R. Cel. Pereira Pascoal 23A 2410-453 Leiria<br>
 Guimarota</h2>
 
-<h2>📍R. Cel. Pereira Pascoal 23A<br>
-2410-453 Leiria</h2>
-
-<a href="https://maps.app.goo.gl/21BqhSGcvybXyAqQ6"
-   target="_blank">
-
-<button style="
-margin-top:20px;
-padding:15px 30px;
-font-size:22px;
-background:#8b1e1e;
-color:white;
-border:none;
-border-radius:10px;
-cursor:pointer;
+<img class="mapa"
+src="https://maps.googleapis.com/maps/api/staticmap?center=Castelo+de+Leiria&zoom=17&size=700x400&markers=color:red%7CCastelo+de+Leiria"
+alt="https://maps.app.goo.gl/21BqhSGcvybXyAqQ6
 ">
 
-🗺️ Abrir localização no Google Maps
-
-</button>
-
-</a>
 <p style="font-size:22px">
 
 🗝️ No local “IMT – Parque de Estacionamento” receberás uma mensagem por e-mail com o destino do jantar.
@@ -176,4 +159,3 @@ document.getElementById("erro").innerHTML="Código incorreto.";
 </body>
 
 </html>
-
