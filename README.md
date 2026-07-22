@@ -100,7 +100,7 @@
    
     #pergaminho::before,
     #pergaminho::after {
-        content: ".";
+        content: "🧭";
         position: absolute;
         font-size: 42px;
         color: #6b1f1f;
