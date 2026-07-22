@@ -96,29 +96,8 @@
         }
     }
 
-    
-   
-    #pergaminho::before,
-    #pergaminho::after {
-        content: "✦";
-        position: absolute;
-        font-size: 42px;
-        color: #6b1f1f;
-        opacity: 0.8;
 
-
-    }
-
-    #pergaminho::before {
-        top: 15px;
-        left: 25px;
-    }
-
-    #pergaminho::after {
-        bottom: 15px;
-        right: 25px;
-    }
-
+      
     h1 {
         margin: 0 0 12px;
         font-family: 'MedievalSharp', Georgia, serif;
