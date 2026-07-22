@@ -98,7 +98,8 @@
 
     #pergaminho::before,
     #pergaminho::after {
-        content: "✦";
+        content: " <img width="512" height="512" alt="image" src="https://github.com/user-attachments/assets/dba674bc-07c8-4854-be32-af189fdc2e2e" />
+";
         position: absolute;
         font-size: 42px;
         color: #6b1f1f;
